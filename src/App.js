@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Top from './components/top';
+import Mid from './components/middle';
+import Ex from './components/ex';
 
-function App() {
+
+function Alert(){
+  alert("I am the function");
+}
+
+function Demo(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Top pageInfo = "Profile Page" alertFun = {Alert}/> 
+    <Ex/>
+      <Mid/>
     </div>
   );
 }
 
-export default App;
+export default Demo;
+
+
+
+
+
