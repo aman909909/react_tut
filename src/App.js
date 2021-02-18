@@ -2,18 +2,19 @@ import React, {useState} from 'react';
 import Top from './components/top';
 import Mid from './components/middle';
 import Ex from './components/ex';
+import Loop from './components/loop';
+import UseEff from './components/useeff';
 
 
-function Alert(){
-  alert("I am the function");
+function Alert(data){
+  alert(data);
 }
 
 function Demo(){
+  // const [number, setNumber] = useState(0);
   return (
     <div>
-      <Top pageInfo = "Profile Page" alertFun = {Alert}/> 
-    <Ex/>
-      <Mid/>
+      <UseEff/>
     </div>
   );
 }

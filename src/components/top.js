@@ -8,6 +8,10 @@ function Changed(evt){
     console.log(evt.target.value);
 }
 
+function examole(para){
+
+};
+
 
 
 function Top(props){
@@ -19,6 +23,7 @@ function Top(props){
     return (
         <div> 
             {counter}
+            <button onClick={() => props.setNumber(props.number+1)}>Alert</button>
             <button onClick={inc}>Clickk</button>
             <input type="text" onChange ={Changed} ></input>           
             <h3>I am the top of the {props['pageInfo']}
